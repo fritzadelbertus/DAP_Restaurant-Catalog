@@ -48,7 +48,7 @@ const config = {
       filename: '[name].css',
       chunkFilename: '[id].css',
     }),
-    new BundleAnalyzerPlugin(),
+//     new BundleAnalyzerPlugin(),
   ],
 };
 
