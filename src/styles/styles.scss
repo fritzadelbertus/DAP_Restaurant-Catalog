@@ -1,0 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300&display=swap');
+
+@font-face {
+  font-family: cafeFrancoise;
+  src: url('./cafe-francoise.woff2'), url('./cafe-francoise.woff');
+  font-display: swap;
+}
+
+@import './main.scss';
+@import './home.scss';
+@import './detail.scss';
+@import './restaurant-catalogue.scss';
