@@ -2,7 +2,6 @@ const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
-const ImageminWebpWebpackPlugin = require('imagemin-webp-webpack-plugin');
 const { BundleAnalyzerPlugin } = require('webpack-bundle-analyzer');
 
 const config = {
@@ -48,17 +47,6 @@ const config = {
     new MiniCssExtractPlugin({
       filename: '[name].css',
       chunkFilename: '[id].css',
-    }),
-    new ImageminWebpWebpackPlugin({
-      config: [
-        {
-          test: /images\/\w+\.(jpe?g|png)/,
-          options: {
-            quality: 50,
-          },
-        },
-      ],
-      overrideExtension: true,
     }),
     new BundleAnalyzerPlugin(),
   ],
